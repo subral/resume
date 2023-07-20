@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="icon" type="image/png" href="image/resume.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 >Resume Builder</h1>
+    <form onsubmit="return genratecv()">
+        <div class="fx">
+            <div class="pi">
+                <h2> Personal Information</h2>
+                <input type="file"
+                    class="file-uplode-input"
+                    accept="image/*">
+                <label>First Name</label>
+                <input type="text"
+                    id="fn"
+                    placeholder="First Name">
+                <label>Last Name</label>
+                <input type="text"
+                    id="ln"
+                    placeholder="Last Name">
+                <label>Email</label>
+                <input type="email"
+                    id="em"
+                    placeholder="Email">
+                <label for="gender">Gender</label>
+                <select name=""
+                    id="gen">
+                    <option value=""></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+                <label>Phone Number</label>
+                <input type="number"
+                    id="phnu"
+                    placeholder="Phone Number">
+                <label> Tell me About Your self</label>
+                <textarea placeholder="Tell me about Your self"
+                    id="tell"
+                    rows="5"
+                    cols="80"></textarea>
+            </div>
+        
+        
+            <div class="pi"
+                id="input-container">
+                <h2> Professional Information</h2>
+                <label>Company Name</label>
+                <input type="text"
+                    id="cn"
+                    placeholder="Company's Name">
+                <label>Post</label>
+                <input type="text"
+                    id="post"
+                    placeholder="Post">
+                <label for="np">Notice Period</label>
+                <select name=""
+                    id="np">
+                    <option value=""></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br>
+                <label for="">Discription</label>
+                <textarea name=""
+                    id="disc"
+                    placeholder="Discription"
+                    cols="30"
+                    rows="5"></textarea>
+                <button id="add-button">Add Experience</button><br>
+                <label>LinkedIn Handle</label>
+                <input type="text"
+                    id="linkin"
+                    placeholder="LinkedIn Handle">
+                <label> Git Hub link</label>
+                <input type="text"
+                    id="gitlink"
+                    placeholder="Git Hub link">
+        
+            </div>
+        
+            <div class="pi"
+                id="cunt">
+                <h2>Academic Qualification</h2>
+                <label for="">Institute Name</label>
+                <input type="text"
+                    id="instiName"
+                    placeholder="Institute Name">
+                <label> Course</label>
+                <input type="text"
+                    id="course"
+                    placeholder="PCM,PCB,Commerce etc">
+                <label for="">Starting date</label>
+                <input type="date"
+                    id="sdate">
+                <label for="">Ending date</label>
+                <input type="date"
+                    id="edate">
+                <label for="">Acheivement</label>
+                <textarea placeholder="Acheivement"
+                    id="achi"
+                    cols="5"
+                    rows="5"></textarea>
+                <button id="add-qual">Add Qualification</button><br>
+            </div>
+        </div>
+        <button  id="btn1" onclick="generateResume()">Submit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
