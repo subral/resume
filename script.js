@@ -114,7 +114,7 @@
       <link rel="stylesheet" href="style1.css">
               <div class="res">
           <div class="leftblack">
-              <img src="image/images.png" alt="">
+              <img src="images/images.png" alt="">
               <div class="outer">
                   <h1>Contact</h1><hr>
                   <p>+91 ${phone}</p>
